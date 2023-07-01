@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paper.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <h1 class="title">Rock Paper Scissor</h1>
+
+    <div class="container">
+
+    <button onclick="user('r')" class="btn">Rock</button>
+    <button onclick="user('p')" class="btn" >paper</button>
+    <button onclick="user('s')"class="btn">Scissor</button>
+
+ </div>
+ <div class="container">
+    <h1>User Choice: <span id="uc"></span></h1>
+    <h1>Computer Choice: <span id="cc"></span></h1>
+    <h1>Winner: <span id="winner"></span></h1>
+
+</div>
+
+<button onclick id="help"><a href="https://thegeniusofplay.org/genius/play-ideas-tips/play-ideas/rock-paper-scissors.aspx#:~:text=A%20classic%20two%2Dperson%20game,See%20who%20wins%20each%20round!">Help </a></button>
+
+ <div id="result">
+
+    <button onclick="resetthegame()" id="reset">Restart</button>
+     
+    
+</div> 
+    
+
+
+    <script src="scissor.js"></script>
+</body>
+</html>

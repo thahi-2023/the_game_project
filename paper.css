@@ -1,0 +1,49 @@
+* {
+    background-color: ghostwhite;
+}
+
+
+
+
+
+
+.title {
+    
+    text-align: center;
+    
+
+}
+
+
+
+.container {
+
+    color: black;
+    text-align: center;
+    margin: 30px;
+    padding: 10 px;
+    }
+
+  .btn {
+    background-color: blue;
+    cursor: pointer;
+  } 
+  #help {
+    margin: auto;
+    cursor: pointer;
+
+  } 
+  #result {
+    
+    margin: 10px;
+    text-align: center;
+   
+    
+    
+  }
+  #reset {
+    background-color: black;
+    cursor: pointer;
+    color: wheat;
+    margin: 40px;
+  }
