@@ -50,34 +50,25 @@ function user
          document.getElementById('uc').innerHTML= x;
           document.getElementById('cc').innerHTML = c;
 }
-call the compute rfunction store that value in var c.
 
-Result: using switch condition 
+The user(x) function is called when the user clicks on one of the buttons (rock, paper, or scissors). It takes the user's choice as a parameter x. It updates the user's choice display by setting the innerHTML of the element with the id 'uc' to x. It then calls the computer() function to get the computer's choice and updates the computer's choice display by setting the innerHTML of the element with the id 'cc' to the returned value c.
 
-  possible of winning user. so using switch function. so creating case for user winning choices.
-  
-   switch(x+c){
-        case 'rs':
-            case 'pr':
-                case 'sp':
-                    document.getElementById('winner').innerHTML = "User won the game"
-                    break;
-   }
-   possible of winning computer. so using switch function. so creating case for computer winning choices.
+Next, there is a switch statement that checks the combination of the user's choice x and the computer's choice c to determine the winner. If the combination matches 'rs', 'pr', or 'sp', the user wins and the innerHTML of the element with the id 'winner' is set to "User won the game". If the combination matches 'sr', 'rp', or 'ps', the computer wins and the innerHTML of the element with the id 'winner' is set to "Computer won the game". If the combination matches 'rr', 'pp', or 'ss', it's a draw and the innerHTML of the element with the id 'winner' is set to "Game Draw".
 
-   case 'sr':
-            case 'rp':
-                case 'ps':
-                    document.getElementById('winner').innerHTML = 'Computer won the game'
-                    break; 
 
-   possible of not winning both side so the game will be draw. so using switch function. so creating case for game to draw.
-    case 'rr':
-            case 'pp':
-                case 'ss':
-                    document.getElementById('winner').innerHTML =' Game Draw'
-                    break;
 
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
 
    
   

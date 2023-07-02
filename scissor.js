@@ -37,6 +37,11 @@ function user(x) {
     }
 }
 
-function resettheagain() {
-    document.getElementById('restart').innerText = '';
-}
+// restart
+const restartButton = document.getElementById("restart");
+restartButton.addEventListener("click", ()=> {
+    document.getElementById('uc').innerHTML = "";
+    document.getElementById('cc').innerHTML = "";
+    document.getElementById('winner').innerHTML = "";
+});
+

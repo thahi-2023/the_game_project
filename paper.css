@@ -1,49 +1,54 @@
-* {
-    background-color: ghostwhite;
+body {
+    background-color: lightskyblue;
 }
-
-
-
-
-
 
 .title {
-    
-    text-align: center;
-    
-
-}
-
-
-
-.container {
-
-    color: black;
-    text-align: center;
-    margin: 30px;
-    padding: 10 px;
+     text-align: center;
     }
 
-  .btn {
-    background-color: blue;
-    cursor: pointer;
-  } 
-  #help {
-    margin: auto;
-    cursor: pointer;
+#game {
+      text-align: center;
+      margin: 30px;
+      padding: 10 px;
+    }
 
-  } 
-  #result {
-    
-    margin: 10px;
-    text-align: center;
-   
-    
-    
-  }
-  #reset {
-    background-color: black;
+
+
+  .btn {
+    line-height: 30px;
+    width: 150px;
+    color: white;
+    background-color: rgb(72, 82, 104);
     cursor: pointer;
-    color: wheat;
-    margin: 40px;
+    text-align: center;
+  } 
+  .container {
+    background-color: lightgrey;
+    border: 3px solid ;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
   }
+  #uc {
+    color: blue;
+  }
+  .reset{
+    text-align: center;
+  }
+  #restart{
+     line-height: 30px;
+     width: 150px;
+     color:blue ;
+     background-color: red;
+     
+  }
+
+  #help {
+    width: 150px;
+    line-height: 30px;
+    color:blue;
+    background-color:yellowgreen;
+    cursor: pointer;
+} 
+  
+  
