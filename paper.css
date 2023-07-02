@@ -35,10 +35,17 @@ body {
     color: blue;
   }
   #cc {
-    color: blue;
+    color: red;
   }
   #winner {
-    color: red;
+    color: green;
+  }
+  #userScore {
+    color: blue;
+  }
+
+  #computerScore {
+    color: red
   }
   .reset{
     text-align: center;

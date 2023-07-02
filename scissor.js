@@ -1,4 +1,16 @@
 
+//Initialize Score
+
+let userScore = 0;
+let computerScore =0;
+
+// Create  a function to update the score
+
+function updateScores() {
+    document.getElementById('userScore').textContent = userScore;
+    document.getElementById('computerScore').textContent = computerScore;
+}
+
 
 // create a function to choose random choice for computer
 function computer(){
@@ -20,13 +32,15 @@ function user(x) {
         case 'rs':
             case 'pr':
                 case 'sp':
-                    document.getElementById('winner').innerHTML = "User won the game"
+                    document.getElementById('winner').innerHTML = "User won the game";
+                    userScore++;  //Increment user score
                     break;
     // chances of computer to win the game
         case 'sr':
             case 'rp':
                 case 'ps':
-                    document.getElementById('winner').innerHTML = 'Computer won the game'
+                    document.getElementById('winner').innerHTML = 'Computer won the game';
+                    computerScore++;  // Increment computer score
                     break;                
     // chance of getting draw
          case 'rr':
@@ -35,13 +49,19 @@ function user(x) {
                     document.getElementById('winner').innerHTML =' Game Draw'
                     break;
     }
+
+    updateScores(); 
 }
 
-// restart
+// restart button event listner
 const restartButton = document.getElementById("restart");
 restartButton.addEventListener("click", ()=> {
+    //clear the game result and reset scores
     document.getElementById('uc').innerHTML = "";
     document.getElementById('cc').innerHTML = "";
     document.getElementById('winner').innerHTML = "";
+    userScore = 0;
+    computerScore = 0;
+    updateScores ();
 });
 
