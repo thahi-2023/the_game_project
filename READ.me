@@ -1,0 +1,102 @@
+
+
+Project Name
+                    Rock paper Scissor Game
+
+Rock Paper scissor game:
+     I developed the rock, paper, scissor game using HTML, CSS and Javascript
+
+ HTML 
+     Created title rock paper scissor   
+     created a container. with in the contained I created three button. 
+     created another container
+     here i used Used choice , computer choice and result
+
+
+  Javascript
+   create a function called computer, in that function created a array so computer function can choose random value.named that array as a
+example:
+var a = ['r','p','s'];
+r represnt rock
+p represent paper
+s represent scissor
+
+Arrays are used by index positions.
+we have three index . to get element from array we use index. so using random math method
+example:\
+ a[0] = r;
+ a[1] = p;
+ a[2] = s;
+
+ console.log(Math.random()*3);
+
+ Index value will not exceed more than three. so miltiply by 3 the random method gives less than 3 that is out last index.
+
+example:
+     multiply .999*3 = 2.99997
+     that is less than 3.
+     we need the whole number 2 that is our index 
+     to eliminate after the decimal we use floor method to eleminate the number after decimal
+
+     console.log(Math.floor(Math.random()*3));
+
+     created the var b and store the computer random choices
+
+function user
+      created the function user. when we call the function user and passing value through user. whenever we click the button the function call the  button using the char.
+
+      example:
+      function user() {
+         document.getElementById('uc').innerHTML= x;
+          document.getElementById('cc').innerHTML = c;
+}
+call the compute rfunction store that value in var c.
+
+Result: using switch condition 
+
+  possible of winning user. so using switch function. so creating case for user winning choices.
+  
+   switch(x+c){
+        case 'rs':
+            case 'pr':
+                case 'sp':
+                    document.getElementById('winner').innerHTML = "User won the game"
+                    break;
+   }
+   possible of winning computer. so using switch function. so creating case for computer winning choices.
+
+   case 'sr':
+            case 'rp':
+                case 'ps':
+                    document.getElementById('winner').innerHTML = 'Computer won the game'
+                    break; 
+
+   possible of not winning both side so the game will be draw. so using switch function. so creating case for game to draw.
+    case 'rr':
+            case 'pp':
+                case 'ss':
+                    document.getElementById('winner').innerHTML =' Game Draw'
+                    break;
+
+
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+       
+
