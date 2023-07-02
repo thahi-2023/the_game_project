@@ -56,6 +56,44 @@ The user(x) function is called when the user clicks on one of the buttons (rock,
 Next, there is a switch statement that checks the combination of the user's choice x and the computer's choice c to determine the winner. If the combination matches 'rs', 'pr', or 'sp', the user wins and the innerHTML of the element with the id 'winner' is set to "User won the game". If the combination matches 'sr', 'rp', or 'ps', the computer wins and the innerHTML of the element with the id 'winner' is set to "Computer won the game". If the combination matches 'rr', 'pp', or 'ss', it's a draw and the innerHTML of the element with the id 'winner' is set to "Game Draw".
 
 
+RESTART:
+
+The restart button with the id "restart" is added to the HTML. In the JavaScript code, an event listener is attached to the restart button. When the restart button is clicked, the event listener executes the provided callback function, which clears the previous game results by setting the innerHTML of the relevant elements (uc, cc, and winner) to an empty string.
+
+const restartButton = document.getElementById("restart");
+restartButton.addEventListener("click", ()=> {
+    document.getElementById('uc').innerHTML = "";
+    document.getElementById('cc').innerHTML = "";
+    document.getElementById('winner').innerHTML = "";
+});
+
+RESOURCES:
+
+
+    W3 school provides all the helpful resources for Javascript. DOM method you can use and learn more stuff
+
+
+    https://www.w3schools.com/js/js_htmldom_methods.asp
+
+
+SWITCH STATEMENT:
+    syntax for switch:
+
+    switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+learn more about switch case visit w3 schools. it provides helpful resourses
+
+https://www.w3schools.com/js/js_switch.asp
+
 
 
 
