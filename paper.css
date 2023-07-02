@@ -4,6 +4,7 @@ body {
 
 .title {
      text-align: center;
+     color: black;
     }
 
 #game {
@@ -22,15 +23,22 @@ body {
     cursor: pointer;
     text-align: center;
   } 
-  .container {
+  .container  {
+    columns: blue;
     background-color: lightgrey;
-    border: 3px solid ;
+    border: 1px solid ;
     border-radius: 25px;
     padding: 10px;
     text-align: center;
   }
   #uc {
     color: blue;
+  }
+  #cc {
+    color: blue;
+  }
+  #winner {
+    color: red;
   }
   .reset{
     text-align: center;
@@ -39,7 +47,7 @@ body {
      line-height: 30px;
      width: 150px;
      color:blue ;
-     background-color: red;
+     background-color: lightslategray;
      
   }
 
